@@ -1,0 +1,11 @@
+body { background: lightblue ;
+font-family: 'Courier New', Courier, monospace;
+margin: 70px;
+color: navy;}
+
+ div { width: 65%; margin: auto;}
+
+ h1 { text-align: center; }
+ 
+ h2 { text-align: center; 
+    font-style: italic; }
