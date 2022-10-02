@@ -1,6 +1,8 @@
-body { 
+body { background:#eccddd;
     margin: 0;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #134d7c;
 }
 
 .arrows {
