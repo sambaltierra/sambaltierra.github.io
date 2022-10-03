@@ -1,3 +1,13 @@
+header { 
+    border: 2px solid gold;
+}
+
+h1  { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36pt;
+    font-weight: 600;
+}
+
 .gallery1 div {
     border: 2px solid red;
     flex: 1;
@@ -18,6 +28,7 @@ div img {
 }
 
 .gallery2 {
+    border: 2px solid pink;
     display: flex;
     flex-wrap: wrap;
 }
