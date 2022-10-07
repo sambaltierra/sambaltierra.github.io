@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background: beige;
+}
+
+body.content-shift-page {
+    background: rgba(106, 142, 35, 0.691);
+}
+
+main, header, footer {
+    background: white;
+    width: 70%;
+    margin: auto;
+}
+
+main {
+    border: 4px dashed goldenrod;
+    position: relative;
+    height: 70vh;
+    margin-top: 100px;
+}
+
+p.content {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    padding: 0 40px;
+    z-index: 3;
+}
+
+.haus {
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    z-index: 2;
+}
+
+.haus img, .circle img {
+    width: 200px;
+}
+
+.two-column section {
+    flex: 1;
+}
+
+.two-column img {
+    width: 80%;
+}
+
+.two-column p {
+    margin-left: -150px;
+}
+
+body.content-shift-page main {
+    background: grey;
+    color: white;
+}

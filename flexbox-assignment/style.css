@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 18pt;
+    font-style: bold;
+    color: beige;
+    background: #333;
+}
+
+header, main {
+    width: 80%;
+    margin: 40px auto;
+    font-family: monospace;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 11pt;
+    padding: 20px;
+}
+
+main {
+    background: beige;
+}
+
+.buy {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.buy .left {
+    width: 30%;
+}
+
+.buy .right {
+    width: 70%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery div {
+    flex: 20%;
+}
+
+img {
+    width: 100%;
+}
