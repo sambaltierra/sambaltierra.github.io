@@ -37,13 +37,14 @@ a {
 
 .moonrise-h1-home:hover {
     color: #EDFF18;
+    background: #88B0C1;
     font-family: fenway-park-jf, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: capitalize;
-    -webkit-text-stroke: #EDFF18;
-    
+    -webkit-text-stroke: #EDFF18;  
 }
+
 .budapest-h1-home {
     padding: 40px;
 }
@@ -55,6 +56,7 @@ a {
     font-style: normal;
     -webkit-text-stroke: #FFBDD8;
     font-size: 24pt;
+    background: #6A446C;
 }
 
 .isle-h1-home {
@@ -62,13 +64,14 @@ a {
 }
 
 .isle-h1-home:hover {
-    color: #E80000;
+    color: #D44222;
     font-family: ibm-plex-mono, sans-serif;
     font-weight: 700;
     font-style: italic;
-    -webkit-text-stroke: #E80000;
+    -webkit-text-stroke: #D44222;
     text-transform: capitalize;
     font-size: 24pt;
+    background-color: #343434;
 }
 
 .dispatch-h1-home {
@@ -81,12 +84,15 @@ a {
     font-weight: 700;
     font-style: normal;
     -webkit-text-stroke: #00DFFE;
+    background: #9D9F6A;
 }
 
 
 
 
-
+.moonrise {
+    background: #88B0C1;
+}
 
 .moonrise-header {
     background-image: url(wes-header-images/moonrise-header.jpg);
@@ -141,6 +147,10 @@ nav a {
     font-size: 14pt;
 }*/
 
+.about {
+    padding: 100px 0px 100px 0px;
+}
+
 .moonrise-h1 {
     width: 60%;
     margin: auto;
@@ -161,6 +171,115 @@ nav a {
     font-weight: 600;
     font-size: 16pt;
     letter-spacing: 2.5pt;
+    text-align: center;
+}
+
+.moonrise-h3 {
+    width: 600px;
+    margin: auto;
+    color: #EDFF18;
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42pt;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.moonrise-h3-about {
+    width: 700px;
+    margin: auto;
+    color: #EDFF18;
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55pt;
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.moonrise-h4 {
+    width: 700px;
+    margin: auto;
+    color: #EDFF18;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+    letter-spacing: 2.5pt;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+p {
+    width: 700px;
+    margin: auto;
+    color: #EDFF18;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+    letter-spacing: .25pt;
+    text-align: left;
+    padding-bottom: 100px;
+    padding-top: 15px;
+}
+
+.info {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.moonrise-h5 {
+    color: #EDFF18;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.moonrise-h6 {
+    color: #EDFF18;
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24pt;
+}
+
+.cast-image {
+    border-radius: 50%;
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+.cast{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.trailer {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+footer {
+    height: 100px;
     text-align: center;
 }
 
