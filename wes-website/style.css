@@ -285,6 +285,7 @@ p {
     font-weight: 500;
     font-size: 18pt;
     letter-spacing: .25pt;
+    line-height: 20pt;
     text-align: left;
     padding-bottom: 100px;
     padding-top: 15px;
@@ -494,7 +495,7 @@ footer {
     margin: auto;
     color: #FF9CCC;
     font-family: futura-pt, sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16pt;
     letter-spacing: 2.5pt;
     text-align: left;
@@ -511,6 +512,7 @@ footer {
     font-weight: 500;
     font-size: 18pt;
     letter-spacing: .25pt;
+    line-height: 20pt;
     text-align: left;
     padding-bottom: 100px;
     padding-top: 15px;
@@ -667,12 +669,11 @@ footer {
 .isle-about{
     text-align: left;
     margin: auto;
-    width: 700px;
+    width: 900px;
     padding: 100px;
 }
 
 .isle-h3-about {
-    width: 700px;
     margin: auto;
     color: #D44222;
     font-family: ibm-plex-mono, sans-serif;
@@ -685,7 +686,6 @@ footer {
 }
 
 .isle-h3 {
-    width: 700px;
     margin: auto;
     color: #D44222;
     font-family: ibm-plex-mono, sans-serif;
@@ -718,6 +718,7 @@ footer {
     font-weight: 500;
     font-size: 18pt;
     letter-spacing: .25pt;
+    line-height: 21pt;
     text-align: left;
     padding-bottom: 100px;
     padding-top: 15px;
@@ -796,7 +797,7 @@ footer {
 }
 
 .dispatch-nav-bar a:hover {
-    color: #FFFAF0;
+    color: #343434;
     background: #00DFFE;
     padding: 15px;
     border-left: 1px solid #00DFFE;
@@ -873,7 +874,7 @@ footer {
 .dispatch-about{
     text-align: left;
     margin: auto;
-    width: 700px;
+    width: 900px;
     padding: 100px;
 }
 
@@ -926,6 +927,7 @@ footer {
     font-weight: 500;
     font-size: 18pt;
     letter-spacing: .25pt;
+    line-height: 21pt;
     text-align: left;
     padding-bottom: 100px;
     padding-top: 15px;
