@@ -118,16 +118,7 @@ a {
 
 
 
-.moonrise {
-    background: #88B0C1;
-}
 
-.moonrise-header {
-    background-image: url(wes-header-images/moonrise-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-}
 
 nav {
     display: flex;
@@ -143,7 +134,7 @@ nav div {
     width: 2%;
 }
 
-nav ul {
+.moonrise-nav ul {
     flex: 3;
     margin: 0;
     display: flex;
@@ -153,33 +144,23 @@ nav ul {
     justify-content: flex-end;
 }
 
-nav a {
+.moonrise-nav a {
     color: #EDFF18;
     padding: 15px;
     border-left: 1px solid #EDFF18;
-    -webkit-text-stroke: 0px; /* stroke width and color */
+    -webkit-text-stroke: 0px; 
     -webkit-font-smoothing: antialiased;
-    /*font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-size: 9pt;
-    letter-spacing: 1pt;*/
     text-align: center;
-    /*text-transform: uppercase;*/
 }
 
-nav a:hover {
+.moonrise-nav a:hover {
     color: #343434;
     background: #EDFF18;
     padding: 15px;
     border-left: 1px solid #EDFF18;
-    -webkit-text-stroke: 0px; /* stroke width and color */
+    -webkit-text-stroke: 0px; 
     -webkit-font-smoothing: antialiased;
-    /*font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-size: 9pt;
-    letter-spacing: 1pt;*/
     text-align: center;
-    /*text-transform: uppercase;*/
 }
 
 .moonrise-nav-yellow {
@@ -215,13 +196,20 @@ nav a:hover {
 }
 
 
-/*.moonrise-nav {
-    color: #EDFF18;
-    font-family: fenway-park-jf, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14pt;
-}*/
+
+
+
+
+.moonrise {
+    background: #88B0C1;
+}
+
+.moonrise-header {
+    background-image: url(wes-header-images/moonrise-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
 
 .about {
     padding: 100px 0px 100px 0px;
@@ -369,17 +357,68 @@ footer {
     background: #6A446C;
 }
 
+.wes-logo-pink{
+    border-bottom: 1px solid #FF9CCC;
+}
+
+.budapest-nav-bar ul {
+    flex: 3;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #FF9CCC;
+    justify-content: flex-end;
+}
+
 .budapest-nav-bar a {
     color: #FF9CCC;
     padding: 15px;
-    border-left: 1px #FF9CCC;
-    -webkit-text-stroke: 0px; /* stroke width and color */
+    border-left: 1px solid #FF9CCC;
+    -webkit-text-stroke: 0px; 
     -webkit-font-smoothing: antialiased;
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-size: 9pt;
-    letter-spacing: 1pt;
+    text-align: center;   
+}
+
+.budapest-nav-bar a:hover {
+    color: #343434;
+    background: #FF9CCC;
+    padding: 15px;
+    border-left: 1px solid #FF9CCC;
+    -webkit-text-stroke: 0px;
+    -webkit-font-smoothing: antialiased;
     text-align: center;
+}
+
+.moonrise-nav-pink {
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    text-transform: capitalize;
+}
+
+.budapest-nav-pink {
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+.isle-nav-pink {
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: capitalize;
+}
+
+.dispatch-nav-pink {
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10pt;
     text-transform: uppercase;
 }
 
@@ -419,7 +458,7 @@ footer {
 .budapest-about{
     text-align: left;
     margin: auto;
-    width: 700px;
+    width: 900px;
     padding: 100px;
 }
 
@@ -528,17 +567,68 @@ footer {
     background: #343434;
 }
 
+.wes-logo-red{
+    border-bottom: 1px solid #D44222;
+}
+
+.isle-nav-bar ul {
+    flex: 3;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #D44222;
+    justify-content: flex-end;
+}
+
 .isle-nav-bar a {
     color: #D44222;
     padding: 15px;
-    border-left: 1px #D44222;
-    -webkit-text-stroke: 0px; /* stroke width and color */
+    border-left: 1px solid #D44222;
+    -webkit-text-stroke: 0px; 
     -webkit-font-smoothing: antialiased;
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-size: 9pt;
-    letter-spacing: 1pt;
+    text-align: center;   
+}
+
+.isle-nav-bar a:hover {
+    color: #FFFAF0;
+    background: #D44222;
+    padding: 15px;
+    border-left: 1px solid #D44222;
+    -webkit-text-stroke: 0px;
+    -webkit-font-smoothing: antialiased;
     text-align: center;
+}
+
+.moonrise-nav-red {
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    text-transform: capitalize;
+}
+
+.budapest-nav-red {
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+.isle-nav-red {
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: capitalize;
+}
+
+.dispatch-nav-red {
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10pt;
     text-transform: uppercase;
 }
 
@@ -682,18 +772,68 @@ footer {
 .dispatch {
     background: #9D9F6A;
 }
+.wes-logo-aqua{
+    border-bottom: 1px solid #00DFFE;
+}
+
+.dispatch-nav-bar ul {
+    flex: 3;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #00DFFE;
+    justify-content: flex-end;
+}
 
 .dispatch-nav-bar a {
     color: #00DFFE;
     padding: 15px;
-    border-left: 1px #00DFFE;
-    -webkit-text-stroke: 0px; /* stroke width and color */
+    border-left: 1px solid #00DFFE;
+    -webkit-text-stroke: 0px; 
     -webkit-font-smoothing: antialiased;
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-size: 9pt;
-    letter-spacing: 1pt;
+    text-align: center;   
+}
+
+.dispatch-nav-bar a:hover {
+    color: #FFFAF0;
+    background: #00DFFE;
+    padding: 15px;
+    border-left: 1px solid #00DFFE;
+    -webkit-text-stroke: 0px;
+    -webkit-font-smoothing: antialiased;
     text-align: center;
+}
+
+.moonrise-nav-aqua {
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    text-transform: capitalize;
+}
+
+.budapest-nav-aqua {
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+.isle-nav-aqua {
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: capitalize;
+}
+
+.dispatch-nav-aqua {
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10pt;
     text-transform: uppercase;
 }
 
