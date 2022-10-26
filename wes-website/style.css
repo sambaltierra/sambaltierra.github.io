@@ -1,5 +1,12 @@
+* {box-sizing: border-box;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 .header-home {
-   background: #FFFAF0;; 
+   background: #FFFAF0; 
    width: 10%;
    margin: auto;
    padding: 20px;
@@ -10,29 +17,32 @@ body {
 }
 
 .titles-home { 
-    width: 60%;
+    width: 100%;
+    height: 400px;
+    padding-top: 60px;
     margin: auto;
-    padding: 20px;
-    font-family: futura-pt, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30pt;
-    text-transform: uppercase;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 a {
     text-decoration: none;
-    -webkit-text-stroke: 1.11px black; /* stroke width and color */
-    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1.11px black;
+    color: #FFFAF0;
     -webkit-font-smoothing: antialiased;
 }
 
 .moonrise-h1-home {
-    padding: 40px
+    color: #FFFAF0;
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40pt;
+    text-transform: capitalize;
+    -webkit-text-stroke: 1px #343434;
 }
 
 .moonrise-h1-home:hover {
@@ -46,21 +56,31 @@ a {
 }
 
 .budapest-h1-home {
-    padding: 40px;
+    font-family: henderson-slab-basic, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30pt;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #343434;
 }
 
 .budapest-h1-home:hover {
-    color: #FFBDD8;
+    color: #FF9CCC;
     font-family: henderson-slab-basic, serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
-    -webkit-text-stroke: #FFBDD8;
-    font-size: 24pt;
+    -webkit-text-stroke: #FF9CCC;
+    font-size: 30pt;
     background: #6A446C;
 }
 
 .isle-h1-home {
-    padding: 40px;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30pt;
+    text-transform: capitalize;
+    -webkit-text-stroke: 1px #343434;
 }
 
 .isle-h1-home:hover {
@@ -70,12 +90,17 @@ a {
     font-style: italic;
     -webkit-text-stroke: #D44222;
     text-transform: capitalize;
-    font-size: 24pt;
+    font-size: 30pt;
     background-color: #343434;
 }
 
 .dispatch-h1-home {
-    padding: 40px;
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30pt;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #343434;
 }
 
 .dispatch-h1-home:hover {
@@ -86,6 +111,9 @@ a {
     -webkit-text-stroke: #00DFFE;
     background: #9D9F6A;
 }
+
+
+
 
 
 
@@ -108,7 +136,7 @@ nav {
 
 nav div {
     flex: 1;
-    border-bottom: 1px #EDFF18;
+    border-bottom: 1px solid #EDFF18;
 }
 
 .wes-logo {
@@ -121,23 +149,71 @@ nav ul {
     display: flex;
     list-style: none;
     padding: 20px;
-    border-bottom: 1px #EDFF18;
+    border-bottom: 1px solid #EDFF18;
     justify-content: flex-end;
 }
 
 nav a {
     color: #EDFF18;
     padding: 15px;
-    border-left: 1px #EDFF18;
+    border-left: 1px solid #EDFF18;
     -webkit-text-stroke: 0px; /* stroke width and color */
     -webkit-font-smoothing: antialiased;
-    font-family: futura-pt, sans-serif;
+    /*font-family: futura-pt, sans-serif;
     font-weight: 600;
     font-size: 9pt;
-    letter-spacing: 1pt;
+    letter-spacing: 1pt;*/
     text-align: center;
+    /*text-transform: uppercase;*/
+}
+
+nav a:hover {
+    color: #343434;
+    background: #EDFF18;
+    padding: 15px;
+    border-left: 1px solid #EDFF18;
+    -webkit-text-stroke: 0px; /* stroke width and color */
+    -webkit-font-smoothing: antialiased;
+    /*font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    letter-spacing: 1pt;*/
+    text-align: center;
+    /*text-transform: uppercase;*/
+}
+
+.moonrise-nav-yellow {
+    font-family: fenway-park-jf, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    text-transform: capitalize;
+}
+
+.budapest-nav-yellow {
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10pt;
     text-transform: uppercase;
 }
+
+.isle-nav-yellow {
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: capitalize;
+}
+
+.dispatch-nav-yellow {
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
 
 /*.moonrise-nav {
     color: #EDFF18;
@@ -283,3 +359,477 @@ footer {
     text-align: center;
 }
 
+
+
+
+
+
+
+.budapest {
+    background: #6A446C;
+}
+
+.budapest-nav-bar a {
+    color: #FF9CCC;
+    padding: 15px;
+    border-left: 1px #FF9CCC;
+    -webkit-text-stroke: 0px; /* stroke width and color */
+    -webkit-font-smoothing: antialiased;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.budapest-header {
+    background-image: url(wes-header-images/budapest-header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.budapest-header-text {
+    padding-top: 250px;
+}
+
+.budapest-h1 {
+    color: #FF9CCC;
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48pt;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.budapest-h2 {
+    width: 60%;
+    margin: auto;
+    color: #FF9CCC;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    letter-spacing: 2.5pt;
+    text-align: center;
+}
+
+.budapest-about{
+    text-align: left;
+    margin: auto;
+    width: 700px;
+    padding: 100px;
+}
+
+.budapest-h3-about {
+    width: 700px;
+    margin: auto;
+    color: #FF9CCC;
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36pt;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.budapest-h3 {
+    width: 700px;
+    margin: auto;
+    color: #FF9CCC;
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36pt;
+    text-transform: uppercase;
+    text-align: center; 
+    padding-bottom: 80px;
+}
+
+.budapest-h4 {
+    width: 700px;
+    margin: auto;
+    color: #FF9CCC;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+    letter-spacing: 2.5pt;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.budapest-about p {
+    width: 700px;
+    margin: auto;
+    color: #FF9CCC;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+    letter-spacing: .25pt;
+    text-align: left;
+    padding-bottom: 100px;
+    padding-top: 15px;
+}
+
+.budapest-info {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.budapest-h5 {
+    color: #FF9CCC;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.budapest-h6 {
+    color: #FF9CCC;
+    font-family: henderson-slab-basic, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16pt;
+}
+
+.budapest-h3-trailer {
+    width: 900px;
+    margin: auto;
+    color: #FF9CCC;
+    font-family: henderson-slab-basic, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36pt;
+    text-transform: uppercase;
+    text-align: left; 
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+.isle {
+    background: #343434;
+}
+
+.isle-nav-bar a {
+    color: #D44222;
+    padding: 15px;
+    border-left: 1px #D44222;
+    -webkit-text-stroke: 0px; /* stroke width and color */
+    -webkit-font-smoothing: antialiased;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.isle-header {
+    background-image: url(wes-header-images/isle-header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.isle-header-text {
+    padding-top: 250px;
+}
+
+.isle-h1 {
+    color: #D44222;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60pt;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.isle-h2 {
+    width: 60%;
+    margin: auto;
+    color: #D44222;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    letter-spacing: 2.5pt;
+    text-align: center;
+}
+
+.isle-about{
+    text-align: left;
+    margin: auto;
+    width: 700px;
+    padding: 100px;
+}
+
+.isle-h3-about {
+    width: 700px;
+    margin: auto;
+    color: #D44222;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36pt;
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.isle-h3 {
+    width: 700px;
+    margin: auto;
+    color: #D44222;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36pt;
+    text-align: center; 
+    padding-bottom: 80px;
+}
+
+.isle-h4 {
+    width: 700px;
+    margin: auto;
+    color: #D44222;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+    letter-spacing: 2.5pt;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.isle-about p {
+    width: 700px;
+    margin: auto;
+    color: #D44222;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+    letter-spacing: .25pt;
+    text-align: left;
+    padding-bottom: 100px;
+    padding-top: 15px;
+}
+
+.isle-info {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.isle-h5 {
+    color: #D44222;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.isle-h6 {
+    color: #D44222;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16pt;
+}
+
+.isle-h3-trailer {
+    width: 900px;
+    margin: auto;
+    color: #D44222;
+    font-family: ibm-plex-mono, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36pt;
+    text-align: left; 
+    padding-bottom: 80px;
+}
+
+
+
+
+
+
+.dispatch {
+    background: #9D9F6A;
+}
+
+.dispatch-nav-bar a {
+    color: #00DFFE;
+    padding: 15px;
+    border-left: 1px #00DFFE;
+    -webkit-text-stroke: 0px; /* stroke width and color */
+    -webkit-font-smoothing: antialiased;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dispatch-header {
+    background-image: url(wes-header-images/dispatch-header.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.dispatch-header-text {
+    padding-top: 250px;
+}
+
+.dispatch-h1 {
+    color: #00DFFE;
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60pt;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.dispatch-h2 {
+    width: 60%;
+    margin: auto;
+    color: #00DFFE;
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    letter-spacing: 2.5pt;
+    text-align: center;
+}
+
+.dispatch-about{
+    text-align: left;
+    margin: auto;
+    width: 700px;
+    padding: 100px;
+}
+
+.dispatch-h3-about {
+    width: 700px;
+    margin: auto;
+    color: #00DFFE;
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36pt;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.dispatch-h3 {
+    width: 700px;
+    margin: auto;
+    color: #00DFFE;
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36pt;
+    text-align: center; 
+    text-transform: uppercase;
+    padding-bottom: 80px;
+}
+
+.dispatch-h4 {
+    width: 700px;
+    margin: auto;
+    color: #00DFFE;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+    letter-spacing: 2.5pt;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.dispatch-about p {
+    width: 700px;
+    margin: auto;
+    color: #00DFFE;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+    letter-spacing: .25pt;
+    text-align: left;
+    padding-bottom: 100px;
+    padding-top: 15px;
+}
+
+.dispatch-info {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.dispatch-h5 {
+    color: #00DFFE;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.dispatch-h6 {
+    color: #00DFFE;
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.dispatch-h3-trailer {
+    width: 900px;
+    margin: auto;
+    color: #00DFFE;
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36pt;
+    text-align: left; 
+    text-transform: uppercase;
+    padding-bottom: 80px;
+}
