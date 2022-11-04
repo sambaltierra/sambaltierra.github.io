@@ -47,13 +47,18 @@ a {
 
 .moonrise-h1-home:hover {
     color: #EDFF18;
-    background: #88B0C1;
     font-family: fenway-park-jf, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: capitalize;
     -webkit-text-stroke: #EDFF18;  
 }
+
+.moonrise-bg {
+    background: #88b0c1;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+  }
 
 .budapest-h1-home {
     font-family: henderson-slab-basic, serif;
@@ -71,8 +76,13 @@ a {
     font-style: normal;
     -webkit-text-stroke: #FF9CCC;
     font-size: 30pt;
-    background: #6A446C;
 }
+
+.budapest-bg {
+    background: #6a446c;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+  }
 
 .isle-h1-home {
     font-family: ibm-plex-mono, sans-serif;
@@ -91,8 +101,13 @@ a {
     -webkit-text-stroke: #D44222;
     text-transform: capitalize;
     font-size: 30pt;
-    background-color: #343434;
 }
+
+.isle-bg {
+    background: #343434;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+  }
 
 .dispatch-h1-home {
     font-family: interstate, sans-serif;
@@ -109,8 +124,13 @@ a {
     font-weight: 700;
     font-style: normal;
     -webkit-text-stroke: #00DFFE;
-    background: #9D9F6A;
 }
+
+.dispatch-bg {
+    background: #9d9f6a;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+  }
 
 
 
@@ -323,7 +343,7 @@ p {
 .cast-image {
     border-radius: 50%;
     width: 200px;
-    padding-bottom: 30px;
+    
 }
 
 .cast{
@@ -839,14 +859,14 @@ footer {
 }
 
 .dispatch-header {
-    background-image: url(wes-header-images/dispatch-header.webp);
+    background-image: url(wes-header-images/dispatch-header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 100%;
 }
 
 .dispatch-header-text {
-    padding-top: 250px;
+    padding-top: 220px;
 }
 
 .dispatch-h1 {
