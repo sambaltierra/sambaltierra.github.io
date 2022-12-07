@@ -1,0 +1,130 @@
+* {box-sizing: border-box;}
+
+a {
+    text-decoration: none;
+}
+
+/* HOMEPAGE */
+
+.header-home {
+    height: 20vh;
+    width: 100vw;
+    background-color: #F3EEE1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-home {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+    color: #561818;
+    padding-bottom: 1vh;
+    
+}
+
+.h2-home {
+    font-family: maxular,serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #561818;
+}
+
+.theater-home {
+    height: 40vh;
+    width: 100vw;
+    background-color: #8B3F00;
+    display: flex;
+    align-items: center;
+}
+
+.h3-home {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40vh;
+    color: #F3EEE1;
+    margin-left: 20px;
+}
+
+.restaurant-home {
+    height: 40vh;
+    width: 100vw;
+    background-color: #561818;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.h4-home {
+    font-family: etna-x-condensed,serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40vh;
+    text-transform: uppercase;
+    color: #F3EEE1;
+    margin-right: 20px;
+}
+
+
+
+/* THEATER PAGE */
+
+.theater-home {
+    background-color: #F3EEE1;
+}
+
+.theater-header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.theater-nav {
+    font-family: etna-x-condensed,serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #8B3F00;
+}
+
+.theater-headline {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-theater {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 15vh;
+    width: 70vw;
+    color: #8B3F00;
+}
+
+.theater-description {
+    height: 100vh;
+    display: flex;
+}
+
+.theater-main {
+    width: 50vw;
+}
+
+.description {
+    padding: 8vw;
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    letter-spacing: -1pt;
+    line-height: 4vh;
+    color: #8B3F00;
+}
