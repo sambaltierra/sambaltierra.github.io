@@ -78,7 +78,7 @@ a {
 }
 
 .theater-header {
-    height: 10vh;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     margin: 20px;
@@ -97,6 +97,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 3pt solid #8B3F00;
 }
 
 .h1-theater {
@@ -112,10 +113,12 @@ a {
 .theater-description {
     height: 100vh;
     display: flex;
+    border-bottom: 3pt solid #8B3F00;
 }
 
 .theater-main {
     width: 50vw;
+    height: 100vh;
 }
 
 .description {
@@ -128,3 +131,4 @@ a {
     line-height: 4vh;
     color: #8B3F00;
 }
+
