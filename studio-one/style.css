@@ -4,6 +4,9 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
 /* HOMEPAGE */
 
 .header-home {
@@ -23,7 +26,6 @@ a {
     font-size: 5vh;
     color: #561818;
     padding-bottom: 1vh;
-    
 }
 
 .h2-home {
@@ -48,6 +50,8 @@ a {
     font-size: 40vh;
     color: #F3EEE1;
     margin-left: 20px;
+    animation-name: fadeIn;
+    animation-duration: 3s
 }
 
 .restaurant-home {
@@ -67,6 +71,8 @@ a {
     text-transform: uppercase;
     color: #F3EEE1;
     margin-right: 20px;
+    animation-name: fadeIn;
+    animation-duration: 3s
 }
 
 
@@ -84,12 +90,21 @@ a {
     margin: 20px;
 }
 
-.theater-nav {
+.home-button {
     font-family: etna-x-condensed,serif;
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
     color: #8B3F00;
+    font-size: 5vh
+}
+
+.menu-button {
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8B3F00;
+    text-transform: uppercase;
 }
 
 .theater-headline {
@@ -98,7 +113,14 @@ a {
     align-items: center;
     justify-content: center;
     border-bottom: 3pt solid #8B3F00;
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
+
+@keyframes fadeIn { 
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+    }
 
 .h1-theater {
     font-family: railroad-gothic-atf,sans-serif;
@@ -131,4 +153,432 @@ a {
     line-height: 4vh;
     color: #8B3F00;
 }
+
+.auditoriums {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10vh;
+    border-bottom: 3pt solid #8B3F00;
+    padding-bottom: 8vh;
+}
+
+.auditoriums>* {
+    flex: 0 0 33.33%;
+    padding: 20px;
+}
+
+.h1-auditorium {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+    color: #8B3F00;
+}
+
+.h1-section-title {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25vh;
+    color: #8B3F00;
+    position: absolute;
+    padding-top: 8vh;
+}
+
+.now-playing-title {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    transition: transform .5s;
+}
+
+.now-playing-title:hover {
+    transform: scale(1.1);
+}
+
+.now-playing-cards {
+    display: flex;
+}
+
+.movie-card {
+    padding: 2vw;
+}
+
+.bones-image {
+    transition: transform .5s;
+}
+
+.bones-image:hover {
+    transform: scale(1.1);
+}
+
+.movie-title-rating {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.movie-title {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vh;
+    color: #8B3F00;
+}
+
+.rating {
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #8B3F00;
+}
+
+.movie-description {
+    font-family: fenwick,sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #8B3F00;
+    padding-top: 5px;
+}
+
+.times {
+    padding-top: 20px;
+    padding-bottom: 15vh;
+}
+
+button {
+    border: 1.5pt solid #8B3F00;
+    color: #8B3F00;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 20pt;
+}
+
+button:hover {
+    transition: ease-in-out .2s;
+    background-color: #8B3F00;
+    border: 1pt solid #8B3F00;
+    color: #F3EEE1;
+    text-align: center;
+    text-decoration: none;
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    border-radius: 20pt;
+}
+
+.see-more {
+    background-color: #8B3F00;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F3EEE1;
+    border-bottom: 3pt solid #8B3F00
+}
+
+.see-more-text {
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F3EEE1;
+    margin: 10vw;
+}
+
+.see-more-text:hover {
+    scale: 1.5;
+    transition: .5s ease-in-out;
+}
+
+.plan {
+    width: 70vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+}
+
+.plan-paragraph {
+    font-family: fenwick,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0pt;
+    color: #8B3F00; 
+    padding-bottom: 3vh;
+}
+
+.plan-bold {
+    font-family: fenwick,sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #8B3F00;
+}
+
+.theater-footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #8B3F00;
+}
+
+.h1-footer {
+    font-family: etna-x-condensed,serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #F3EEE1;
+    font-size: 50vh;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.h2-footer {
+    font-family: maxular,serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #F3EEE1;
+    margin-left: 40px;
+    font-size: 8vh;
+}
+
+.footer-flex {
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+.footer-text {
+    font-family: fenwick,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    color: #F3EEE1;
+}
+
+.footer-buttons {
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-left: 40px;
+    padding-bottom: 15px;
+    color: #F3EEE1;
+}
+
+.footer-buttons:hover {
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-left: 40px;
+    padding-bottom: 15px;
+    color: #F3EEE1;
+    text-decoration: underline;
+    transition: ease-in-out .2s;
+}
+
+
+
+/* BONES AND ALL PAGE*/ 
+
+.movie-main {
+    display: flex;
+    height: 110vh;
+    width: 100vw;
+    background-image: linear-gradient(#8B3F00, #F3EEE1);
+}
+
+.bones-image {
+    width: 35vw;
+}
+
+.movie-main-right {
+    margin-left: 12vw;
+}
+
+.external-buttons {
+    display: flex;
+    justify-content: end;
+    padding-top: 40px;
+}
+
+.h1-movie {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15vh;
+    color: #8B3F00;
+    padding-top: 10vh;
+}
+
+.movie-details {
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+    font-family: fenwick,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0pt;
+    color: #8B3F00; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.movie-summary {
+    font-family: fenwick,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -.5pt;
+    line-height: 20px;
+    color: #8B3F00;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: solid 1.5pt #8B3F00;
+}
+
+.penthouse {
+    padding-top: 30px;
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5vh;
+    color: #8B3F00; 
+}
+
+.today {
+    font-family: fenwick,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0pt;
+    color: #8B3F00; 
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+/* RESTAURANT PAGE */
+
+
+
+.restaurant-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.menu-button-restaurant {
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #561818;
+    text-transform: uppercase;
+}
+
+.home-button-restaurant {
+    font-family: railroad-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #561818;
+    font-size: 5vh
+}
+
+.restaurant-headline {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3pt solid #561818;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    font-family: etna-x-condensed,serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #561818;
+    font-size: 20vh;
+}
+
+.restaurant-description {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.restaurant-about {
+    padding-left: 5vw;
+    padding-top: 20vh;
+}
+
+.description-2 {
+    font-family: fenwick,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    letter-spacing: -1pt;
+    line-height: 4vh;
+    color: #561818;
+    padding-bottom: 3vh;
+}
+
+.bar-image {
+    width: 60vw;
+    height: auto;
+}
+
+.menu {
+    height: 40vh;
+    background-color: #561818;
+    border-bottom: 3pt solid #F3EEE1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    width: 50px;
+    margin-right: 50px;
+}
+
+.h1-menu {
+    font-family: etna-x-condensed,serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #F3EEE1;
+    font-size: 22vh;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 
